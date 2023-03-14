@@ -22,8 +22,8 @@ const Banner = () => {
             rel="noreferrer"
             className="flex items-center bg-green-600 text-white w-1/2 py-1 justify-center rounded-3xl mt-8"
           >
-            <img src={WA} alt="Whatsapp" className="w-8" />
-            CONTACT ME
+            <img src={WA} alt="Whatsapp" className="w-8 mr-2" />
+            <p>CONTACT ME</p>
           </a>
         </div>
         <div className="lg:w-2/5 w-full">
