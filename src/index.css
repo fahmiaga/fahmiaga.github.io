@@ -1,18 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&display=swap");
 
-
-body{
-  font-family: 'Inconsolata', monospace;
+body {
+  font-family: "Inconsolata", monospace;
 }
 
-.my-name{
-  font-family: 'Pacifico', cursive;
+.my-name {
+  font-family: "Pacifico", cursive;
   font-size: 2rem;
   background: -webkit-linear-gradient(#eee, #333);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-hovered {
+  @apply w-full bg-yellow-600 opacity-90 absolute h-0 bottom-0 ease-out duration-300 transition-all group-hover:h-full;
+}
+
+.hovered-content {
+  @apply absolute w-full opacity-0 bottom-10 ease-out duration-300 transition-all group-hover:opacity-100 group-hover:bottom-0;
 }
