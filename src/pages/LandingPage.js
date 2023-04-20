@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import About from "../components/About";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 import Project from "../components/Project";
 
 const LandingPage = () => {
@@ -13,6 +14,7 @@ const LandingPage = () => {
         <Banner />
         <About />
         <Project />
+        <Footer />
       </div>
     </>
   );
