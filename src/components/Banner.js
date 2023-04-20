@@ -5,7 +5,7 @@ import WA from "../assets/image/wa-icon.svg";
 const Banner = () => {
   return (
     <>
-      <div className="lg:px-40 px-4 mt-20 flex items-center lg:flex-row flex-col-reverse justify-center w-full">
+      <div id="profile" className="lg:px-40 px-4 mt-20 flex items-center lg:flex-row flex-col-reverse justify-center w-full">
         <div className=" text-yellow-600 font-semibold lg:w-1/2 w-full lg:text-left text-center">
           <p className="uppercase">Fullstack Developer</p>
           <h1 className="lg:text-7xl text-4xl text-white uppercase py-4">
