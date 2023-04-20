@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <>
       <div className="lg:px-40 px-4 mt-20 flex items-center lg:flex-row flex-col-reverse justify-center w-full">
-        <div className=" text-yellow-600 font-semibold lg:w-1/2 w-full">
+        <div className=" text-yellow-600 font-semibold lg:w-1/2 w-full lg:text-left text-center">
           <p className="uppercase">Fullstack Developer</p>
           <h1 className="lg:text-7xl text-4xl text-white uppercase py-4">
             Hi, I AM A Web Developer Expert In Web Development
@@ -20,7 +20,7 @@ const Banner = () => {
             href="https://wa.me/085275002732"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center bg-green-600 text-white w-1/2 py-1 justify-center rounded-3xl mt-8"
+            className="flex items-center bg-green-600 text-white w-1/2 py-1 justify-center rounded-3xl mt-8 lg:mx-0 mx-auto"
           >
             <img src={WA} alt="Whatsapp" className="w-8 mr-2" />
             <p>CONTACT ME</p>

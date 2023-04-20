@@ -7,7 +7,7 @@ const Footer = () => {
   let year = new Date().getFullYear()
   return (
     <>
-      <div className="py-32 text-white px-52 -z-0">
+      <div className="py-32 text-white lg:px-52 px-4 -z-0">
         <hr className="w-full border-yellow-600 border-t-2 ml-2" />
         <div className="flex relative bg-green-800 w-1/4 mx-auto mt-7">
           <a

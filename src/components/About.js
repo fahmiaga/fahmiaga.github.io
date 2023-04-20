@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="mt-40 text-white px-52">
+      <div className="mt-40 text-white px-4 lg:px-52">
         <div className="flex items-center">
           <h1 className="text-4xl text-white text-center">About</h1>
           <hr className="w-full border-yellow-600 border-t-4 ml-2" />
@@ -13,7 +13,7 @@ const About = () => {
             "Building websites is like building a puzzle. Every piece has to fit
             perfectly to create a beautiful picture."
           </p>
-          <div className="pl-56">
+          <div className="lg:pl-56 pl-6">
             <h3 className="text-2xl mb-4">Hi, My Name is Fahmi Aga Aditya</h3>
             <p>
               An enthusiastic Web Developer with exceptional flexibility as well

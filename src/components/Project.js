@@ -123,7 +123,7 @@ const Project = () => {
 
   return (
     <>
-      <div className="mt-40 text-white px-52">
+      <div className="mt-40 text-white lg:px-52 px-4">
         <div className="flex items-center">
           <h1 className="text-4xl text-white text-center">Project</h1>
           <hr className="w-full border-yellow-600 border-t-4 ml-2" />
