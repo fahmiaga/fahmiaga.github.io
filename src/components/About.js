@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
-      <div id="about" className="mt-40 text-white px-4 lg:px-52">
+      <div id="about" className="mt-40 text-white px-4 lg:px-52" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
         <div className="flex items-center">
           <h1 className="text-4xl text-white text-center">About</h1>
           <hr className="w-full border-yellow-600 border-t-4 ml-2" />

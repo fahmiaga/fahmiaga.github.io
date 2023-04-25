@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import myPhoto from "../assets/image/edited_pot_crop.png";
 import WA from "../assets/image/wa-icon.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <div id="profile" className="lg:px-40 px-4 mt-20 flex items-center lg:flex-row flex-col-reverse justify-center w-full">
-        <div className=" text-yellow-600 font-semibold lg:w-1/2 w-full lg:text-left text-center">
+        <div className=" text-yellow-600 font-semibold lg:w-1/2 w-full lg:text-left text-center" data-aos="fade-up" data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
           <p className="uppercase">Fullstack Developer</p>
           <h1 className="lg:text-7xl text-4xl text-white uppercase py-4">
             Hi, I AM A Web Developer Expert In Web Development
@@ -26,7 +34,10 @@ const Banner = () => {
             <p>CONTACT ME</p>
           </a>
         </div>
-        <div className="lg:w-2/5 w-full">
+        <div className="lg:w-2/5 w-full" data-aos="fade-down" data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
           <img
             src={myPhoto}
             alt="myphoyo"

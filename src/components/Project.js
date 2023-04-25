@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LeftArrow from "../assets/image/arrow-right-short.svg";
 import Modal from "./Modal";
 import PortfolioContent from "./PortfolioContent";
@@ -17,6 +17,8 @@ import videoFurni from "../assets/image/furnitured.webm";
 import pertamina1 from "../assets/image/pertamina-1.png";
 import pertamina2 from "../assets/image/pertamina-2.png";
 import videoPertamina from "../assets/image/pertamina.webm";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Project = () => {
   const data = [
@@ -96,8 +98,8 @@ const Project = () => {
     {
       id: 4,
       title: "Pertamina",
-      link_backend: "https://github.com/fahmiaga/comic-api-laravel",
-      link_frontend: "https://github.com/fahmiaga/comic-frontend",
+      link_backend: null,
+      link_frontend: null,
       images: [
         {
           id: 1,
@@ -109,7 +111,7 @@ const Project = () => {
         }
       ],
       description:
-        "Mangalime is an app to read comics online. made with PHP laravel framework and react js.",
+        "Pertamina dashboard",
       video: videoPertamina
     },
   ];
@@ -120,7 +122,9 @@ const Project = () => {
     setDetail(data.find(x => x.id === id))
   }
 
-
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <div id="works" className="mt-40 text-white lg:px-52 px-4">
@@ -133,6 +137,7 @@ const Project = () => {
             <div
               className="w-full bg-slate-200 h-64 relative group transition-transform duration-500"
               key={dat.id}
+              data-aos="fade-left"
             >
               <div className="card-hovered"></div>
               <div className="hovered-content h-full flex flex-col justify-center items-center">
