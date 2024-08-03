@@ -42,10 +42,15 @@ const PortfolioContent = ({ data }) => {
         </div>
         <div className="mt-7">
           <p><strong>Description</strong> :{data.description}</p>
-          <p><strong>Demo</strong> :</p>
+          {data.demo ? (<p><strong>Demo</strong> : <a
+            href={data.demo}
+            className="text-blue-600 underline"
+          >
+            Click Me
+          </a> </p>) : ("")}
           <p>
             <strong>FrontEnd Project</strong> :
-            {data.link_frontend !== undefined || data.link_frontend !== '' ? (
+            {data.link_frontend !== null ? (
               <span>
                 {" "}
                 <a

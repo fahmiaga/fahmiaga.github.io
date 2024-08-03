@@ -17,6 +17,11 @@ import videoFurni from "../assets/image/furnitured.webm";
 import pertamina1 from "../assets/image/pertamina-1.png";
 import pertamina2 from "../assets/image/pertamina-2.png";
 import videoPertamina from "../assets/image/pertamina.webm";
+import hotelzero1 from "../assets/image/0.png";
+import hotelzero2 from "../assets/image/1.png";
+import hotelzero3 from "../assets/image/3.png";
+import hotelzero4 from "../assets/image/4.png";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -87,7 +92,7 @@ const Project = () => {
           image: sport3,
         },
         {
-          id: 3,
+          id: 4,
           image: sport4,
         },
       ],
@@ -106,7 +111,7 @@ const Project = () => {
           image: pertamina1,
         },
         {
-          id: 1,
+          id: 2,
           image: pertamina2,
         }
       ],
@@ -114,6 +119,31 @@ const Project = () => {
         "Pertamina dashboard",
       video: videoPertamina
     },
+    {
+      id: 5,
+      title: "HotelZero",
+      link_backend: null,
+      link_frontend: null,
+      images: [
+        {
+          id: 1,
+          image: hotelzero1,
+        },
+        {
+          id: 2,
+          image: hotelzero2,
+        },
+        {
+          id: 3,
+          image: hotelzero3,
+        },
+        {
+          id: 4,
+          image: hotelzero4,
+        }
+      ],
+      demo: "https://www.hotelzero.io/"
+    }
   ];
   const [showModal, setShowModal] = useState(false);
   const [detail, setDetail] = useState({})
