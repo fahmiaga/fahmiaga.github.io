@@ -398,14 +398,14 @@ const Project = () => {
                   alt="tet"
                   className="w-full h-28 object-cover rounded-t-xl"
                 />
-                <h1 className="text-4xl text-center font-extrabold text-yellow-600 absolute w-full -bottom-4">{dat.title}</h1>
+                <h1 className="text-md md:text-4xl text-center font-extrabold text-yellow-600 absolute w-full -bottom-4">{dat.title}</h1>
               </div>
               <div className="px-2">
-                <h3 className="text-xl text-slate-400">Technology Stack:</h3>
+                <h3 className="text-xs md:text-xl text-slate-400">Technology Stack:</h3>
                 {dat.tech_stack ? (
-                  <div className="w-full grid grid-cols-3 grid-flow-row gap-4 mb-6">
+                  <div className="w-full grid grid=cols-2 md:grid-cols-3 grid-flow-row gap-4 mb-6">
                     {dat.tech_stack.map((stack) => (
-                      <div className="text-black flex gap-1 items-center p-2 bg-slate-300 rounded-md max-w-[130px]">
+                      <div className="text-black flex gap-1 flex-col items-center p-2 bg-slate-300 rounded-md max-w-[130px]">
                         <img src={stack.image} alt={stack.name} className="w-8 h-8" />
                         <p>{stack.name}</p>
                       </div>
@@ -413,7 +413,7 @@ const Project = () => {
                   </div>) : ""}
 
               </div>
-              <div className="w-full flex items-center justify-center cursor-pointer" onClick={() => handleShow(dat.id)}>
+              <div className="w-full flex items-center justify-center cursor-pointer mb-10" onClick={() => handleShow(dat.id)}>
                 <p className="text-lg font-bold text-blue-600">Open details</p>
                 <img src={openSvg} alt="open-link" className="w-5 h-5" />
               </div>
